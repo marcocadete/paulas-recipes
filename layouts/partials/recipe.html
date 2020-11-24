@@ -1,0 +1,20 @@
+<div class="col-sm-12 col-md-6 col-lg-4">
+    <div class="pr-recipe card mt-5" style="width: 280px;">
+        <!-- <img src="{{ .Params.image }}" class="card-img-top" alt="..."> -->
+        <div class="pr-recipe__image" style="background-image: url('{{ .Params.image }}')"></div>
+        <div class="card-body pr-recipe__info">
+            {{ $cat := "categories" }} <!-- Use the plural form here -->
+            {{ range .Param $cat }}
+                {{ $name := . }}
+                {{ with $.Site.GetPage (printf "/%s/%s" $cat ($name | urlize)) }}
+                    <a href="/categories/{{ $name }}" class="badge badge-primary pr-recipe__category">{{ $name }}</a>
+                {{ end }}
+            {{ end }}
+            <h5 class="card-title">{{ .Title }}</h5>
+            <div class="mt-2 mb-2 text-pink">
+                <small>By: {{ .Params.author }}</small>
+            </div>
+            <a href="{{ .Permalink }}" class="btn btn-sm btn-tertiary">View Recipe</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<section class="pr-recent-recipes">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Recent Recipes</h2>
+                <a href="/recipes">All recipes</a>
+            </div>
+        </div>
+        <div class="row">
+        {{ range first 3 (where .Site.RegularPages "Section" "recipes") }}
+            {{ partial "recipe" . }}
+        {{ end }}
+        <div>
+    </div>
+</section>

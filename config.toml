@@ -1,3 +1,11 @@
 baseURL = "http://paulas-recipes.com/"
 languageCode = "en-us"
 title = "Paulas Recipes"
+
+disableKinds = ["RSS", "taxonomyTerm"]
+
+[taxonomies]
+    category = "categories"
+
+[outputs]
+    section = ["JSON", "HTML"]

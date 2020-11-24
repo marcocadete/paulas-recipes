@@ -21,10 +21,11 @@
 *
 *   7. Category
 *
-*   8. 404 Page
+*   8. Recent recipes
 *
+*   9. Recipe
 *
-*
+*   10. 404 Page
 */
 /**********************/
 /* 1.  Bootstrap 4.5.3
@@ -57,6 +58,7 @@
   --danger: #dc3545;
   --light: #F8EFEA;
   --dark: #192F01;
+  --tertiary: #89C72B;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1334,6 +1336,23 @@ pre {
   .table-hover .table-dark:hover > th {
     background-color: #b2baaa; }
 
+.table-tertiary,
+.table-tertiary > th,
+.table-tertiary > td {
+  background-color: #deefc4; }
+
+.table-tertiary th,
+.table-tertiary td,
+.table-tertiary thead th,
+.table-tertiary tbody + tbody {
+  border-color: #c2e291; }
+
+.table-hover .table-tertiary:hover {
+  background-color: #d3eab0; }
+  .table-hover .table-tertiary:hover > td,
+  .table-hover .table-tertiary:hover > th {
+    background-color: #d3eab0; }
+
 .table-active,
 .table-active > th,
 .table-active > td {
@@ -2021,6 +2040,32 @@ fieldset:disabled a.btn {
     .show > .btn-dark.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(60, 78, 39, 0.5); }
 
+.btn-tertiary {
+  color: #212529;
+  background-color: #89C72B;
+  border-color: #89C72B; }
+  .btn-tertiary:hover {
+    color: #fff;
+    background-color: #73a824;
+    border-color: #6c9d22; }
+  .btn-tertiary:focus, .btn-tertiary.focus {
+    color: #fff;
+    background-color: #73a824;
+    border-color: #6c9d22;
+    box-shadow: 0 0 0 0.2rem rgba(121, 175, 43, 0.5); }
+  .btn-tertiary.disabled, .btn-tertiary:disabled {
+    color: #212529;
+    background-color: #89C72B;
+    border-color: #89C72B; }
+  .btn-tertiary:not(:disabled):not(.disabled):active, .btn-tertiary:not(:disabled):not(.disabled).active,
+  .show > .btn-tertiary.dropdown-toggle {
+    color: #fff;
+    background-color: #6c9d22;
+    border-color: #659320; }
+    .btn-tertiary:not(:disabled):not(.disabled):active:focus, .btn-tertiary:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-tertiary.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(121, 175, 43, 0.5); }
+
 .btn-outline-primary {
   color: #E0475B;
   border-color: #E0475B; }
@@ -2188,6 +2233,27 @@ fieldset:disabled a.btn {
     .btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-dark.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(25, 47, 1, 0.5); }
+
+.btn-outline-tertiary {
+  color: #89C72B;
+  border-color: #89C72B; }
+  .btn-outline-tertiary:hover {
+    color: #212529;
+    background-color: #89C72B;
+    border-color: #89C72B; }
+  .btn-outline-tertiary:focus, .btn-outline-tertiary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(137, 199, 43, 0.5); }
+  .btn-outline-tertiary.disabled, .btn-outline-tertiary:disabled {
+    color: #89C72B;
+    background-color: transparent; }
+  .btn-outline-tertiary:not(:disabled):not(.disabled):active, .btn-outline-tertiary:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-tertiary.dropdown-toggle {
+    color: #212529;
+    background-color: #89C72B;
+    border-color: #89C72B; }
+    .btn-outline-tertiary:not(:disabled):not(.disabled):active:focus, .btn-outline-tertiary:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-tertiary.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(137, 199, 43, 0.5); }
 
 .btn-link {
   font-weight: 400;
@@ -3730,6 +3796,16 @@ input[type="button"].btn-block {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(25, 47, 1, 0.5); }
 
+.badge-tertiary {
+  color: #212529;
+  background-color: #89C72B; }
+  a.badge-tertiary:hover, a.badge-tertiary:focus {
+    color: #212529;
+    background-color: #6c9d22; }
+  a.badge-tertiary:focus, a.badge-tertiary.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(137, 199, 43, 0.5); }
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -3838,6 +3914,15 @@ input[type="button"].btn-block {
     border-top-color: #b2baaa; }
   .alert-dark .alert-link {
     color: black; }
+
+.alert-tertiary {
+  color: #476716;
+  background-color: #e7f4d5;
+  border-color: #deefc4; }
+  .alert-tertiary hr {
+    border-top-color: #d3eab0; }
+  .alert-tertiary .alert-link {
+    color: #2a3d0d; }
 
 @-webkit-keyframes progress-bar-stripes {
   from {
@@ -4123,6 +4208,17 @@ input[type="button"].btn-block {
     color: #fff;
     background-color: #0d1801;
     border-color: #0d1801; }
+
+.list-group-item-tertiary {
+  color: #476716;
+  background-color: #deefc4; }
+  .list-group-item-tertiary.list-group-item-action:hover, .list-group-item-tertiary.list-group-item-action:focus {
+    color: #476716;
+    background-color: #d3eab0; }
+  .list-group-item-tertiary.list-group-item-action.active {
+    color: #fff;
+    background-color: #476716;
+    border-color: #476716; }
 
 .close {
   float: right;
@@ -4828,6 +4924,14 @@ button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: black !important; }
 
+.bg-tertiary {
+  background-color: #89C72B !important; }
+
+a.bg-tertiary:hover, a.bg-tertiary:focus,
+button.bg-tertiary:hover,
+button.bg-tertiary:focus {
+  background-color: #6c9d22 !important; }
+
 .bg-white {
   background-color: #fff !important; }
 
@@ -4887,6 +4991,9 @@ button.bg-dark:focus {
 
 .border-dark {
   border-color: #192F01 !important; }
+
+.border-tertiary {
+  border-color: #89C72B !important; }
 
 .border-white {
   border-color: #fff !important; }
@@ -7159,6 +7266,12 @@ a.text-light:hover, a.text-light:focus {
 a.text-dark:hover, a.text-dark:focus {
   color: black !important; }
 
+.text-tertiary {
+  color: #89C72B !important; }
+
+a.text-tertiary:hover, a.text-tertiary:focus {
+  color: #5e881d !important; }
+
 .text-body {
   color: #212529 !important; }
 
@@ -7292,6 +7405,8 @@ body {
     left: 0px;
     opacity: 0.5;
     z-index: 1; }
+  .pr-jumbotron img {
+    border-radius: 50%; }
 
 /**********************/
 /* 5. Quote
@@ -7341,7 +7456,39 @@ body {
     width: 64px; }
 
 /**********************/
-/* 8. 404 Page
+/* 8. Recent recipes
+/*********************/
+.pr-recent-recipes {
+  padding: 120px 0px; }
+  .pr-recent-recipes h2 {
+    color: #363641; }
+
+/**********************/
+/* 9. Recipe
+/*********************/
+.pr-recipe {
+  border: 1px solid #89C72B;
+  transition: box-shadow 0.3s ease-in-out; }
+  .pr-recipe:hover {
+    box-shadow: 0 0 10px #192F01; }
+  .pr-recipe__info {
+    position: relative; }
+    .pr-recipe__info h5 {
+      color: #363641; }
+  .pr-recipe__category {
+    position: absolute;
+    top: -11px;
+    left: 20px; }
+  .pr-recipe__image {
+    background-color: #DED369;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 180px; }
+
+/**********************/
+/* 10. 404 Page
 /*********************/
 .pr-404 {
   /* Set rules to fill background */

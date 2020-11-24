@@ -21,10 +21,11 @@
 *
 *   7. Category
 *
-*   8. 404 Page
+*   8. Recent recipes
 *
+*   9. Recipe
 *
-*
+*   10. 404 Page
 */
 
 /**********************/
@@ -34,6 +35,7 @@
 $theme-colors: (
   "primary": #E0475B,
   "secondary": #DED369,
+  "tertiary": #89C72B,
   "dark": #192F01,
   "light": #F8EFEA
 );
@@ -52,6 +54,7 @@ $tertiary-bg-color: #E0475B;
 $primary-color: #E0475B;
 $secondary-color: #DED369;
 $tertiary-color: #192F01;
+$tertiary-color-light: #89C72B;
 
 // Font:
 $font-family: 'Lato', sans-serif;
@@ -103,6 +106,10 @@ body {
         left: 0px;
         opacity: 0.5;
         z-index: 1;
+    }
+
+    img {
+        border-radius: 50%;
     }
 }
 
@@ -172,7 +179,54 @@ body {
 }
 
 /**********************/
-/* 8. 404 Page
+/* 8. Recent recipes
+/*********************/
+
+.pr-recent-recipes {
+  padding: 120px 0px;
+
+  h2 {
+    color: $font-color-dark;
+  }
+}
+
+/**********************/
+/* 9. Recipe
+/*********************/
+.pr-recipe {
+  border: 1px solid $tertiary-color-light;
+  transition: box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 0 10px $tertiary-color;
+  }
+
+  &__info {
+    position: relative;
+
+    h5 {
+      color: $font-color-dark;
+    }
+  }
+
+  &__category {
+    position: absolute;
+    top: -11px;
+    left: 20px;
+  }
+
+  &__image {
+      background-color: $secondary-bg-color;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 180px;
+  }
+}
+
+/**********************/
+/* 10. 404 Page
 /*********************/
 .pr-404 {
     /* Set rules to fill background */

@@ -1,14 +1,14 @@
 ---
-title: This is a really tasty recipe, my first infact
+title: This is a really tasty recipe, my third infact
 author: John Doe
 description:
 description: >-
     Brewing with a Chemex probably seems like a complicated, time-consuming
     ordeal, but once you get used to the process, it becomes a soothing ritual
     that's worth the effort every time.
-image: /img/first-recipe.jpeg
+image: /img/third-recipe.jpeg
 categories: ["barbecue"]
-serving: 4
+serving: 5
 ingredients: ["butter", "chicken stock", "milk", "honey", "red wine"]
 directions: [
     "Preheat oven to 325 degrees F (165 degrees C). Place rack in the lowest position of the oven.",
