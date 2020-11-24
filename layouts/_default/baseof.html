@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="{{ $.Site.Language.Lang }}">
+    {{ partial "head" . }}
+    <body>
+        {{ block "header" . }}
+            {{ partial "nav" . }}
+        {{end}}
+
+        {{ block "main" . }}{{ end }}
+
+        {{ block "footer" . }}
+            {{ partial "footer" . }}
+        {{end}}
+
+        {{ partial "scripts" . }}
+    </body>
+</html>
+

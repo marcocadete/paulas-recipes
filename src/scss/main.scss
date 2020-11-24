@@ -1,0 +1,122 @@
+/*
+*   TABLE OF CONTENTS:
+*   -----------------
+*
+*   1. Bootstrap 4.5.3:
+*        - Change theme variables
+*        - Import Bootstrap
+*
+*   2. Custom Variables:
+*        - Background colors
+*        - Colors
+*        - Font colors
+*
+*   3. Body
+*
+*   4. Jumbotron 
+*
+*   5. Quote
+*
+*
+*
+*
+*
+*/
+
+/**********************/
+/* 1.  Bootstrap 4.5.3
+/*********************/
+
+$theme-colors: (
+  "primary": #E0475B,
+  "secondary": #DED369,
+  "dark": #192F01,
+  "light": #F8EFEA
+);
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
+/**********************/
+/* 2. Custom Variables
+/*********************/
+// Background Colors
+$primary-bg-color: #F8EFEA;
+$secondary-bg-color: #DED369;
+$tertiary-bg-color: #E0475B;
+
+// Colors
+$primary-color: #E0475B;
+$secondary-color: #DED369;
+$tertiary-color: #192F01;
+
+// Font:
+$font-family: 'Lato', sans-serif;
+$font-color-dark: #363641;
+$font-color-light: #F8EFEA;
+
+/**********************/
+/* 3. Body
+/*********************/
+body {
+    font-family: $font-family;
+    color: $font-color-dark;
+    font-size: 16px;
+    background-color: $primary-bg-color;
+}
+
+/**********************/
+/* 4. Jumbotron
+/*********************/
+.pr-jumbotron {
+    position: relative;
+    background-color: $tertiary-bg-color;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    min-height: 400px;
+
+    h1 {
+        color: #F8EFEA;
+        margin-bottom: 25px;
+        font-weight: 900;
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: #e9e5e3;
+    }
+
+    &__content {
+        padding: 10px;
+    }
+
+    &__overlay {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        opacity: 0.5;
+        z-index: 1;
+    }
+}
+
+/**********************/
+/* 5. Quote
+/*********************/
+.pr-quote {
+    padding: 120px 0;
+    color: $font-color-dark;
+  
+    img {
+      display: block;
+      width: 100px;
+      height: 100px;
+    }
+  
+    blockquote {
+      max-width: 700px;
+      display: block;
+    }
+  }

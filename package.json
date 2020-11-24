@@ -1,0 +1,36 @@
+{
+  "name": "paulas-recipes",
+  "version": "1.0.0",
+  "description": "A recipe website build with Hugo",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcocadete/paulas-recipes.git"
+  },
+  "keywords": [
+    "Hugo",
+    "static",
+    "website"
+  ],
+  "author": "Marco Cadete",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcocadete/paulas-recipes/issues"
+  },
+  "homepage": "https://github.com/marcocadete/paulas-recipes#readme",
+  "dependencies": {
+    "@babel/core": "^7.12.8",
+    "@babel/preset-env": "^7.12.7",
+    "bootstrap": "^4.5.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.5.1",
+    "node-sass": "^5.0.0"
+  }
+}

@@ -1,0 +1,24 @@
+<div class="jumbotron pr-jumbotron" style="background-image: url('{{ .Params.jumbotronImage }}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8">
+                <div class="pr-jumbotron__content">
+                    <h1>{{ .Params.title }}</h1>
+                    {{ if .Params.subtitle }}
+                    <h5>{{ .Params.subtitle }}</h5>
+                    {{ end }}
+                    {{ if .Params.description }}
+                    <p>{{ .Params.description }}</p>
+                    {{ end }}
+                </div>
+            </div>
+            <!-- If you want to display an additional image -->
+            <div class="col-sm-12 col-md-4">
+                {{ if .Params.jumbotronShowExtraImage }}
+                    <img class="img-fluid" src="{{ .Params.jumbotronExtraImage }}" alt="{{ .Params.jumbotronExtraImageTitle }}">
+                {{ end }}
+            </div>
+        </div>
+        <div class="pr-jumbotron__overlay"></div>
+    </div>
+</div>
