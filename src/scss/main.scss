@@ -17,7 +17,11 @@
 *
 *   5. Quote
 *
+*   6. Categories
 *
+*   7. Category
+*
+*   8. 404 Page
 *
 *
 *
@@ -119,4 +123,65 @@ body {
       max-width: 700px;
       display: block;
     }
-  }
+}
+
+/**********************/
+/* 6. Categories
+/*********************/
+.pr-categories {
+    padding: 120px 0px;
+    background-color: #FBF79F;
+  
+    h2 {
+      color: $font-color-dark;
+    }
+}
+
+/**********************/
+/* 7. Category
+/*********************/
+.pr-category {
+    border: 2px solid #FFF;
+    padding: 20px;
+    margin-top: 40px;
+    transition: box-shadow 0.3s ease-in-out;
+    width: 150px;
+  
+    &:hover {
+      box-shadow: 0 0 40px #FFF;
+    }
+  
+    a {
+      color: $font-color-dark;
+      font-size: 22px;
+    }
+  
+    img {
+      width: 64px;
+    }
+}
+
+/**********************/
+/* 8. 404 Page
+/*********************/
+.pr-404 {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+      
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+      
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    z-index: 1000;
+  
+    h1 {
+      font-size: 144px;
+      font-weight: 900;
+    }
+}
