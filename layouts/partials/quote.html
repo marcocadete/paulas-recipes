@@ -1,14 +1,8 @@
 <section class="pr-quote">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 col-md-2 d-flex justify-content-center mb-3 mb-md-0">
-                <img src="/img/quote-icon.png" alt="quote icon">
-            </div>
-            <div class="col-sm-12 col-md-10">
-                <blockquote class="blockquote">
-                   <p>{{ .Params.quote }}</p>
-                </blockquote>
-            </div>
-        </div>
+    <div class="container d-flex flex-wrap flex-sm-nowrap align-items-center justify-content-start">
+        <img class="mr-5" src="/img/quote-icon.png" alt="quote icon">
+        <blockquote class="blockquote">
+          <p class="font-italic">{{ .Params.quote }}</p>
+        </blockquote>
     </div>
 </section>

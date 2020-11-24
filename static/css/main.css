@@ -7297,15 +7297,22 @@ body {
 /* 5. Quote
 /*********************/
 .pr-quote {
-  padding: 120px 0;
+  padding: 40px 0;
   color: #363641; }
+  @media (min-width: 576px) {
+    .pr-quote {
+      padding: 120px 0; } }
   .pr-quote img {
     display: block;
     width: 100px;
     height: 100px; }
   .pr-quote blockquote {
     max-width: 700px;
-    display: block; }
+    display: block;
+    font-size: 1.6rem; }
+    @media (min-width: 576px) {
+      .pr-quote blockquote {
+        font-size: 1.8rem; } }
 
 /**********************/
 /* 6. Categories
