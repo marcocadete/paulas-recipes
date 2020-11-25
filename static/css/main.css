@@ -25,7 +25,11 @@
 *
 *   9. Recipe
 *
-*   10. 404 Page
+*   10. Single Recipe
+*
+*   11. Footer
+*
+*   12. 404 Page   
 */
 /**********************/
 /* 1.  Bootstrap 4.5.3
@@ -57,7 +61,7 @@
   --warning: #ffc107;
   --danger: #dc3545;
   --light: #F8EFEA;
-  --dark: #192F01;
+  --dark: #363641;
   --tertiary: #89C72B;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -1322,19 +1326,19 @@ pre {
 .table-dark,
 .table-dark > th,
 .table-dark > td {
-  background-color: #bfc5b8; }
+  background-color: #c7c7ca; }
 
 .table-dark th,
 .table-dark td,
 .table-dark thead th,
 .table-dark tbody + tbody {
-  border-color: #87937b; }
+  border-color: #96969c; }
 
 .table-hover .table-dark:hover {
-  background-color: #b2baaa; }
+  background-color: #bababe; }
   .table-hover .table-dark:hover > td,
   .table-hover .table-dark:hover > th {
-    background-color: #b2baaa; }
+    background-color: #bababe; }
 
 .table-tertiary,
 .table-tertiary > th,
@@ -2016,29 +2020,29 @@ fieldset:disabled a.btn {
 
 .btn-dark {
   color: #fff;
-  background-color: #192F01;
-  border-color: #192F01; }
+  background-color: #363641;
+  border-color: #363641; }
   .btn-dark:hover {
     color: #fff;
-    background-color: #050a00;
-    border-color: black; }
+    background-color: #25252c;
+    border-color: #1f1f25; }
   .btn-dark:focus, .btn-dark.focus {
     color: #fff;
-    background-color: #050a00;
-    border-color: black;
-    box-shadow: 0 0 0 0.2rem rgba(60, 78, 39, 0.5); }
+    background-color: #25252c;
+    border-color: #1f1f25;
+    box-shadow: 0 0 0 0.2rem rgba(84, 84, 94, 0.5); }
   .btn-dark.disabled, .btn-dark:disabled {
     color: #fff;
-    background-color: #192F01;
-    border-color: #192F01; }
+    background-color: #363641;
+    border-color: #363641; }
   .btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active,
   .show > .btn-dark.dropdown-toggle {
     color: #fff;
-    background-color: black;
-    border-color: black; }
+    background-color: #1f1f25;
+    border-color: #19191e; }
     .btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus,
     .show > .btn-dark.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(60, 78, 39, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(84, 84, 94, 0.5); }
 
 .btn-tertiary {
   color: #212529;
@@ -2214,25 +2218,25 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(248, 239, 234, 0.5); }
 
 .btn-outline-dark {
-  color: #192F01;
-  border-color: #192F01; }
+  color: #363641;
+  border-color: #363641; }
   .btn-outline-dark:hover {
     color: #fff;
-    background-color: #192F01;
-    border-color: #192F01; }
+    background-color: #363641;
+    border-color: #363641; }
   .btn-outline-dark:focus, .btn-outline-dark.focus {
-    box-shadow: 0 0 0 0.2rem rgba(25, 47, 1, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(54, 54, 65, 0.5); }
   .btn-outline-dark.disabled, .btn-outline-dark:disabled {
-    color: #192F01;
+    color: #363641;
     background-color: transparent; }
   .btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active,
   .show > .btn-outline-dark.dropdown-toggle {
     color: #fff;
-    background-color: #192F01;
-    border-color: #192F01; }
+    background-color: #363641;
+    border-color: #363641; }
     .btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-dark.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(25, 47, 1, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(54, 54, 65, 0.5); }
 
 .btn-outline-tertiary {
   color: #89C72B;
@@ -3788,13 +3792,13 @@ input[type="button"].btn-block {
 
 .badge-dark {
   color: #fff;
-  background-color: #192F01; }
+  background-color: #363641; }
   a.badge-dark:hover, a.badge-dark:focus {
     color: #fff;
-    background-color: black; }
+    background-color: #1f1f25; }
   a.badge-dark:focus, a.badge-dark.focus {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(25, 47, 1, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(54, 54, 65, 0.5); }
 
 .badge-tertiary {
   color: #212529;
@@ -3907,13 +3911,13 @@ input[type="button"].btn-block {
     color: #676361; }
 
 .alert-dark {
-  color: #0d1801;
-  background-color: #d1d5cc;
-  border-color: #bfc5b8; }
+  color: #1c1c22;
+  background-color: #d7d7d9;
+  border-color: #c7c7ca; }
   .alert-dark hr {
-    border-top-color: #b2baaa; }
+    border-top-color: #bababe; }
   .alert-dark .alert-link {
-    color: black; }
+    color: #050506; }
 
 .alert-tertiary {
   color: #476716;
@@ -4199,15 +4203,15 @@ input[type="button"].btn-block {
     border-color: #817c7a; }
 
 .list-group-item-dark {
-  color: #0d1801;
-  background-color: #bfc5b8; }
+  color: #1c1c22;
+  background-color: #c7c7ca; }
   .list-group-item-dark.list-group-item-action:hover, .list-group-item-dark.list-group-item-action:focus {
-    color: #0d1801;
-    background-color: #b2baaa; }
+    color: #1c1c22;
+    background-color: #bababe; }
   .list-group-item-dark.list-group-item-action.active {
     color: #fff;
-    background-color: #0d1801;
-    border-color: #0d1801; }
+    background-color: #1c1c22;
+    border-color: #1c1c22; }
 
 .list-group-item-tertiary {
   color: #476716;
@@ -4917,12 +4921,12 @@ button.bg-light:focus {
   background-color: #ebd2c4 !important; }
 
 .bg-dark {
-  background-color: #192F01 !important; }
+  background-color: #363641 !important; }
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
-  background-color: black !important; }
+  background-color: #1f1f25 !important; }
 
 .bg-tertiary {
   background-color: #89C72B !important; }
@@ -4990,7 +4994,7 @@ button.bg-tertiary:focus {
   border-color: #F8EFEA !important; }
 
 .border-dark {
-  border-color: #192F01 !important; }
+  border-color: #363641 !important; }
 
 .border-tertiary {
   border-color: #89C72B !important; }
@@ -7261,10 +7265,10 @@ a.text-light:hover, a.text-light:focus {
   color: #e5c3b1 !important; }
 
 .text-dark {
-  color: #192F01 !important; }
+  color: #363641 !important; }
 
 a.text-dark:hover, a.text-dark:focus {
-  color: black !important; }
+  color: #131317 !important; }
 
 .text-tertiary {
   color: #89C72B !important; }
@@ -7489,7 +7493,51 @@ body {
     height: 180px; }
 
 /**********************/
-/* 10. 404 Page
+/* 10. Single Recipe
+/*********************/
+.pr-single-recipe {
+  color: #363641; }
+  .pr-single-recipe__title {
+    font-size: 1.5rem;
+    font-weight: 900; }
+    @media (min-width: 576px) {
+      .pr-single-recipe__title {
+        font-size: 2rem !important; } }
+  .pr-single-recipe h1, .pr-single-recipe h2 {
+    font-size: 1.5rem; }
+  .pr-single-recipe__subtitle {
+    color: #E0475B;
+    font-weight: 900; }
+  .pr-single-recipe ul {
+    padding: 0px;
+    list-style: none; }
+  .pr-single-recipe__image {
+    margin-top: 10px;
+    min-width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 3px; }
+  .pr-single-recipe__strikethrough:checked ~ span {
+    text-decoration: line-through;
+    color: #e08390; }
+
+/**********************/
+/* 11. Footer
+/*********************/
+footer {
+  padding: 120px 0px;
+  background-color: #E0475B;
+  color: #FFF; }
+  footer ul {
+    list-style: none;
+    padding: 0px; }
+  footer p {
+    font-size: 0.9rem; }
+
+/**********************/
+/* 12. 404 Page
 /*********************/
 .pr-404 {
   /* Set rules to fill background */
@@ -7509,14 +7557,24 @@ body {
     font-weight: 900; }
 
 /**********************/
-/* 11. Footer
+/* 13. Search
 /*********************/
-footer {
-  padding: 120px 0px;
-  background-color: #E0475B;
-  color: #FFF; }
-  footer ul {
-    list-style: none;
-    padding: 0px; }
-  footer p {
-    font-size: 0.9rem; }
+.pr-search-results {
+  display: flex; }
+  .pr-search-results h3 {
+    font-size: 1.3rem; }
+  @media (min-width: 576px) {
+    .pr-search-results h3 {
+      font-size: 1.6rem !important; } }
+
+.pr-search-results__image {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media (min-width: 576px) {
+    .pr-search-results__image {
+      width: 100px;
+      height: 50px; } }

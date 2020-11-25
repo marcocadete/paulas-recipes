@@ -1,5 +1,6 @@
 ---
 title: This is a really tasty recipe, my second infact
+date: 2017-01-05
 author: John Doe
 description:
 description: >-

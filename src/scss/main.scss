@@ -25,7 +25,13 @@
 *
 *   9. Recipe
 *
-*   10. 404 Page
+*   10. Single Recipe
+*
+*   11. Footer
+*
+*   12. 404 Page
+*
+*   13. Search 
 */
 
 /**********************/
@@ -36,7 +42,7 @@ $theme-colors: (
   "primary": #E0475B,
   "secondary": #DED369,
   "tertiary": #89C72B,
-  "dark": #192F01,
+  "dark": #363641,
   "light": #F8EFEA
 );
 
@@ -52,6 +58,7 @@ $tertiary-bg-color: #E0475B;
 
 // Colors
 $primary-color: #E0475B;
+$primary-color-light: #e08390;
 $secondary-color: #DED369;
 $tertiary-color: #192F01;
 $tertiary-color-light: #89C72B;
@@ -227,7 +234,71 @@ body {
 }
 
 /**********************/
-/* 10. 404 Page
+/* 10. Single Recipe
+/*********************/
+.pr-single-recipe {
+    color: $font-color-dark;
+
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 900;
+
+        // Small devices (landscape phones, 576px and up)
+        @media (min-width: 576px) {
+            font-size: 2rem !important;
+        }
+    }
+
+    h1,h2 {
+        font-size: 1.5rem;
+    }
+
+    &__subtitle {
+        color: $primary-color;
+        font-weight: 900;
+    }
+
+    ul {
+        padding: 0px;
+        list-style: none;
+    }
+
+    &__image {
+        margin-top: 10px;
+        min-width: 100%;
+        height: 400px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 3px;
+    }
+
+    &__strikethrough:checked ~ span{
+        text-decoration:line-through;
+        color: $primary-color-light;
+    }
+}
+
+/**********************/
+/* 11. Footer
+/*********************/
+footer {
+    padding: 120px 0px;
+    background-color: $tertiary-bg-color;
+    color: #FFF;
+
+    ul {
+        list-style: none;
+        padding: 0px;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+/**********************/
+/* 12. 404 Page
 /*********************/
 .pr-404 {
     /* Set rules to fill background */
@@ -253,19 +324,33 @@ body {
 }
 
 /**********************/
-/* 11. Footer
+/* 13. Search
 /*********************/
-footer {
-    padding: 120px 0px;
-    background-color: $tertiary-bg-color;
-    color: #FFF;
+.pr-search-results {
+    display: flex;
 
-    ul {
-        list-style: none;
-        padding: 0px;
+    h3 {
+        font-size: 1.3rem;
     }
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+        h3 {
+            font-size: 1.6rem !important;
+        }
+    }
+}
 
-    p {
-        font-size: 0.9rem;
+.pr-search-results__image {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) {
+        width: 100px;
+        height: 50px;
     }
 }

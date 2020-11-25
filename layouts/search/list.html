@@ -24,8 +24,10 @@
                 // create result item
                 var article = document.createElement('article')
                 article.innerHTML = `
-            <a href="${result.ref}"><h3 class="title">${documents[result.ref].title}</h3></a>
-            <p><a href="${result.ref}">${result.ref}</a></p>
+            <div class="pr-search-results">
+                <div class="pr-search-results__image mr-3" style="background-image: url('${documents[result.ref].image}')"></div>
+                <a href="${result.ref}"><h3 class="title">${documents[result.ref].title}</h3></a>
+            </div>
             <br>
             `
                 searchResults.appendChild(article)
@@ -113,7 +115,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12 col-md-6">
+            <div class="col">
                 <section style="min-height: 100px;" id="search-results" class="search"></section>
             </div>
         </div>
