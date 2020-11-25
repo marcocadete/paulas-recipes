@@ -1,7 +1,4 @@
 ---
 title: "Recipes"
-jumbotronImage:
-jumbotronShowExtraImage: false
-jumbotronExtraImage:
-jumbotronExtraImageTitle: 
+description: "A list of all my recipes"
 ---

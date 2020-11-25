@@ -27,11 +27,19 @@
 *
 *   10. Single Recipe
 *
-*   11. Footer
+*   11. Recipe List
 *
-*   12. 404 Page
+*   12. Footer
 *
-*   13. Search 
+*   13. 404 Page
+*
+*   14. Search
+*
+*   15. Header
+*
+*   16. About
+*
+*   17. Contact
 */
 /**********************/
 /* 1.  Bootstrap 4.5.3
@@ -7526,9 +7534,10 @@ body {
     color: #e08390; }
 
 /**********************/
-/* 10. Recipe List
+/* 11. Recipe List
 /*********************/
 .pr-recipe-list {
+  min-height: 100vh;
   padding-bottom: 120px; }
 
 /**********************/
@@ -7567,6 +7576,16 @@ footer {
 /**********************/
 /* 14. Search
 /*********************/
+.pr-search {
+  background-color: #e08390; }
+  .pr-search .pr-header {
+    color: #FFF;
+    background-color: #e08390;
+    margin: 0px;
+    padding-bottom: 0px; }
+  .pr-search .pr-categories {
+    background-color: #F8EFEA; }
+
 .pr-search-results {
   display: flex; }
   .pr-search-results h3 {
@@ -7586,3 +7605,29 @@ footer {
     .pr-search-results__image {
       width: 100px;
       height: 50px; } }
+
+/**********************/
+/* 15. Header
+/*********************/
+.pr-header {
+  background-color: #DED369; }
+  .pr-header h1 {
+    font-weight: 900; }
+
+/**********************/
+/* 16. About
+/*********************/
+.pr-about {
+  min-height: 100vh; }
+  .pr-about .pr-header {
+    color: #fff;
+    background-color: #e08390; }
+
+/**********************/
+/* 16. Contact
+/*********************/
+.pr-contact {
+  min-height: 100vh; }
+  .pr-contact .pr-header {
+    color: #fff;
+    background-color: #e08390; }

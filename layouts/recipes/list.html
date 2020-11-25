@@ -1,12 +1,8 @@
 {{ define "main" }}
 
 <section class="pr-recipe-list">
+    {{ partial "header" . }}
     <div class="container">
-        <div class="row">
-            <div class="col">
-                {{ partial "breadcrumb" . }}
-            </div>
-        </div>
         <div class="row">
             {{ range (.Paginator 5).Pages.ByPublishDate.Reverse }}
                 {{ partial "recipe" . }}

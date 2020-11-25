@@ -26,7 +26,7 @@
                 article.innerHTML = `
             <div class="pr-search-results">
                 <div class="pr-search-results__image mr-3" style="background-image: url('${documents[result.ref].image}')"></div>
-                <a href="${result.ref}"><h3 class="title">${documents[result.ref].title}</h3></a>
+                <a class="text-light" href="${result.ref}"><h3 class="title">${documents[result.ref].title}</h3></a>
             </div>
             <br>
             `
@@ -106,11 +106,12 @@
     }
 
 </script>
-<section>
+<section class="pr-search">
+    {{ partial "header" . }}
     <div class="container">
         <div class="row pb-5">
             <div class="col-sm-12 col-md-6">
-                <h2 class="mt-5 mb-3 text-dark">Search for recipes</h2>
+                <h2 class="mt-5 mb-3 text-light">Enter your search...</h2>
                 <input id="search-input" class="form-control" type="text" placeholder="Loading..." name="search">
             </div>
         </div>
@@ -123,7 +124,4 @@
 
     {{ partial "categories" . }}
 </section>
-
-
-
 {{ end }}
