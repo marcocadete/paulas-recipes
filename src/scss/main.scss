@@ -310,6 +310,14 @@ footer {
     p {
         font-size: 0.9rem;
     }
+
+    a {
+        transition: box-shadow 0.3s ease-in-out;
+
+        &:hover {
+            box-shadow: 0 0 40px #E68CBE;
+        }
+    }
 }
 
 /**********************/
@@ -418,10 +426,40 @@ footer {
 /* 16. About
 /*********************/
 .pr-about {
+    position: relative;
+    background-image: url('/img/page-bg.jpeg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
     min-height: 100vh;
 
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        background-color: $primary-bg-color;
+        color: $font-color-dark;
+        position: relative;
+        z-index: 5;
+        min-height: 400px;
+    }
+
+    &__overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.8);
+        z-index:2;
+    }
+
     &__info {
-        //font-family: 'Satisfy', cursive;
         font-size: 1.2rem;
     }
 
@@ -435,8 +473,11 @@ footer {
     }
 
     .pr-header {
+        margin: 0px;
         color: #fff;
         background-color: $primary-color-light;
+        position: relative;
+        z-index: 4;
     }
 }
 
@@ -446,7 +487,7 @@ footer {
 .pr-contact {
     position: relative;
     min-height: 100vh;
-    background-image: url('/img/contact-bg.jpeg');
+    background-image: url('/img/page-bg.jpeg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -470,7 +511,11 @@ footer {
         right: 0;
         left: 0;
         background-color: rgba(0,0,0,0.8);
-        z-index:2;
+        z-index: 2;
+    }
+
+    &__image {
+        max-width: 400px;
     }
 
     .pr-header {

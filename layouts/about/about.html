@@ -2,7 +2,7 @@
 
 <section class="pr-about">
     {{ partial "header" . }}
-    <div class="container mt-5">
+    <div class="pr-about__container container">
         <div class="row">
             <div class="col-sm-12 col-md-8 order-2 order-md-1">
                 <div class="pr-about__info">
@@ -11,11 +11,12 @@
                     <a href="/contact" role="button" class="btn btn-sm btn-outline-primary">Get in touch</a>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4 order-1 order-md-2">
-                <div class="pr-about__image" style="background-image: url('{{ .Params.image }}')">
+            <div class="d-flex justify-content-md-center col-sm-12 col-md-4 order-1 order-md-2">
+                <div class="pr-about__image" style="background-image: url('{{ .Params.image }}')"></div>
             </div>
         </div>
     </div>
+    <div class="pr-about__overlay"></div>
 </section>
 
 {{ end }}
