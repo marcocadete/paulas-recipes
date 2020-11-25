@@ -7449,26 +7449,24 @@ body {
 /*********************/
 .pr-categories {
   padding: 120px 0px;
-  background-color: #e08390; }
+  background-color: #DED369; }
   .pr-categories h2 {
-    color: #F8EFEA; }
+    color: #363641; }
 
 /**********************/
 /* 7. Category
 /*********************/
 .pr-category {
-  border: 2px solid #e2adb4;
+  border: 2px solid #363641;
   padding: 20px;
   margin-top: 40px;
   transition: box-shadow 0.3s ease-in-out;
   width: 150px; }
   .pr-category:hover {
-    box-shadow: 0 0 40px #FFF;
-    border: 2px solid #F8EFEA; }
-  .pr-category h2 {
-    color: #F8EFEA; }
+    box-shadow: 0 0 40px #363641;
+    border: 2px solid #363641; }
   .pr-category a {
-    color: #F8EFEA;
+    color: #363641;
     font-size: 22px; }
   .pr-category img {
     width: 64px; }
@@ -7547,7 +7545,7 @@ body {
 /*********************/
 footer {
   padding: 120px 0px;
-  background-color: #E0475B;
+  background-color: #363641;
   color: #FFF; }
   footer ul {
     list-style: none;
@@ -7621,7 +7619,8 @@ footer {
 /* 15. Header
 /*********************/
 .pr-header {
-  background-color: #DED369; }
+  background-color: #DED369;
+  border-radius: 0px; }
   .pr-header h1 {
     font-weight: 900; }
 
@@ -7630,6 +7629,15 @@ footer {
 /*********************/
 .pr-about {
   min-height: 100vh; }
+  .pr-about__info {
+    font-size: 1.2rem; }
+  .pr-about__image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%; }
   .pr-about .pr-header {
     color: #fff;
     background-color: #e08390; }

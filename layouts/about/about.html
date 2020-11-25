@@ -2,10 +2,17 @@
 
 <section class="pr-about">
     {{ partial "header" . }}
-    <div class="container">
+    <div class="container mt-5">
         <div class="row">
-            <div class="col">
-                <h2>...</h2>
+            <div class="col-sm-12 col-md-8 order-2 order-md-1">
+                <div class="pr-about__info">
+                    <h2 class="mb-3 mt-5 mt-md-0">Hi, I'm Paula</h2>
+                    <p>Consectetur ipsa doloremque consectetur incidunt placeat consequuntur Perferendis dolor perferendis temporibus atque cum Debitis aliquam ex eaque delectus doloremque Consequuntur repudiandae quos aspernatur quos cumque Atque delectus rem mollitia illum.</p>
+                    <a href="/contact" role="button" class="btn btn-sm btn-outline-primary">Get in touch</a>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 order-1 order-md-2">
+                <div class="pr-about__image" style="background-image: url('{{ .Params.image }}')">
             </div>
         </div>
     </div>

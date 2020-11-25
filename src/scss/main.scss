@@ -45,7 +45,6 @@
 /**********************/
 /* 1.  Bootstrap 4.5.3
 /*********************/
-
 $theme-colors: (
   "primary": #E0475B,
   "secondary": #DED369,
@@ -67,7 +66,7 @@ $tertiary-bg-color: #E0475B;
 // Colors
 $primary-color: #E0475B;
 $primary-color-light: #e08390;
-$primary-color-lightest: #e2adb4;
+$primary-color-lightest: #FFC0CB;
 $secondary-color: #DED369;
 $tertiary-color: #192F01;
 $tertiary-color-light: #89C72B;
@@ -141,13 +140,13 @@ body {
     @media (min-width: 576px) {
         padding: 120px 0;
     }
-  
+
     img {
         display: block;
         width: 100px;
         height: 100px;
     }
-  
+
     blockquote {
         max-width: 700px;
         display: block;
@@ -164,10 +163,10 @@ body {
 /*********************/
 .pr-categories {
     padding: 120px 0px;
-    background-color: $primary-color-light;
+    background-color: $secondary-bg-color;
 
     h2 {
-        color: $font-color-light;
+        color: $font-color-dark;
     }
 }
 
@@ -175,23 +174,19 @@ body {
 /* 7. Category
 /*********************/
 .pr-category {
-    border: 2px solid $primary-color-lightest;
+    border: 2px solid $font-color-dark;
     padding: 20px;
     margin-top: 40px;
     transition: box-shadow 0.3s ease-in-out;
     width: 150px;
 
     &:hover {
-        box-shadow: 0 0 40px #FFF;
-        border: 2px solid $font-color-light;
-    }
-
-    h2 {
-       color: $font-color-light; 
+        box-shadow: 0 0 40px $font-color-dark;
+        border: 2px solid $font-color-dark;
     }
 
     a {
-        color: $font-color-light;
+        color: $font-color-dark;
         font-size: 22px;
     }
 
@@ -305,7 +300,7 @@ body {
 /*********************/
 footer {
     padding: 120px 0px;
-    background-color: $tertiary-bg-color;
+    background-color: $font-color-dark;
     color: #FFF;
 
     ul {
@@ -413,6 +408,7 @@ footer {
 /*********************/
 .pr-header {
     background-color: $secondary-bg-color;
+    border-radius: 0px;
 
     h1 {
         font-weight: 900;
@@ -424,6 +420,20 @@ footer {
 /*********************/
 .pr-about {
     min-height: 100vh;
+
+    &__info {
+        //font-family: 'Satisfy', cursive;
+        font-size: 1.2rem;
+    }
+
+    &__image {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
 
     .pr-header {
         color: #fff;
