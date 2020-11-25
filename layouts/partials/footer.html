@@ -10,11 +10,11 @@
             </div>
             <div class="col-sm-12 col-md-4">
                 <h5 class="font-weight-bold"5>Subscribe</h5>
-                <form action="">
+                <form name="subscription" method="POST" data-netlify="true">
                     <div class="input-group">
                         <p>If you'd like to get notified when a new recipe is posted, then feel free to subscribe.</p>
                         <label class="sr-only" aria-label="Enter your email" for="pr-subscribe__email">Email</label>
-                        <input id="pr-subscribe__email" class="form-control" type="email" placeholder="Email">
+                        <input name="email" id="pr-subscribe__email" class="form-control" type="email" placeholder="Email" required>
                         <div class="input-group-append">
                             <button type="submit" class="btn btn-sm btn-outline-light">Submit</button>
                         </div>

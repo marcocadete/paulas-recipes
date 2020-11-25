@@ -5,22 +5,22 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-6">
-                <form>
+                <form name="contact" method="POST" data-netlify="true">
                     <div class="form-group">
                         <label for="pr-contact-form__name">Name</label>
-                        <input type="text" class="form-control" id="pr-contact-form__name" required>
+                        <input type="text" name="name" class="form-control" id="pr-contact-form__name" required>
                     </div>
                     <div class="form-group">
                         <label for="pr-contact-form__email">Email address</label>
-                        <input type="email" class="form-control" id="pr-contact-form__email" required>
+                        <input type="email" name="email" class="form-control" id="pr-contact-form__email" required>
                     </div>
                     <div class="form-group">
                         <label for="pr-contact-form__subject">Subject</label>
-                        <input type="text" class="form-control" id="pr-contact-form__subject" required>
+                        <input type="text" name="subject" class="form-control" id="pr-contact-form__subject" required>
                     </div>
                     <div class="form-group">
                         <label for="pr-contact-form__message">Message</label>
-                        <textarea class="form-control" id="pr-contact-form__message" name="message" rows="3" required></textarea>
+                        <textarea name="message" class="form-control" id="pr-contact-form__message" rows="3" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
