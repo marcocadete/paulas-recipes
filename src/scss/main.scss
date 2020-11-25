@@ -67,6 +67,7 @@ $tertiary-bg-color: #E0475B;
 // Colors
 $primary-color: #E0475B;
 $primary-color-light: #e08390;
+$primary-color-lightest: #e2adb4;
 $secondary-color: #DED369;
 $tertiary-color: #192F01;
 $tertiary-color-light: #89C72B;
@@ -163,10 +164,10 @@ body {
 /*********************/
 .pr-categories {
     padding: 120px 0px;
-    background-color: #FBF79F;
-  
+    background-color: $primary-color-light;
+
     h2 {
-        color: $font-color-dark;
+        color: $font-color-light;
     }
 }
 
@@ -174,21 +175,26 @@ body {
 /* 7. Category
 /*********************/
 .pr-category {
-    border: 2px solid #FFF;
+    border: 2px solid $primary-color-lightest;
     padding: 20px;
     margin-top: 40px;
     transition: box-shadow 0.3s ease-in-out;
     width: 150px;
-  
+
     &:hover {
         box-shadow: 0 0 40px #FFF;
+        border: 2px solid $font-color-light;
     }
-  
+
+    h2 {
+       color: $font-color-light; 
+    }
+
     a {
-        color: $font-color-dark;
+        color: $font-color-light;
         font-size: 22px;
     }
-  
+
     img {
         width: 64px;
     }
@@ -210,7 +216,6 @@ body {
 /* 9. Recipe
 /*********************/
 .pr-recipe {
-  border: 1px solid $tertiary-color-light;
   transition: box-shadow 0.3s ease-in-out;
 
   &:hover {
@@ -281,7 +286,7 @@ body {
         border-radius: 3px;
     }
 
-    &__strikethrough:checked ~ span{
+    &__strikethrough:checked ~ span {
         text-decoration:line-through;
         color: $primary-color-light;
     }
@@ -320,19 +325,19 @@ footer {
     /* Set rules to fill background */
     min-height: 100%;
     min-width: 1024px;
-      
+
     /* Set up proportionate scaling */
     width: 100%;
     height: auto;
-      
+
     /* Set up positioning */
     position: fixed;
     top: 0;
     left: 0;
     background-color: $primary-bg-color;
-  
+
     z-index: 1000;
-  
+
     h1 {
       font-size: 144px;
       font-weight: 900;
@@ -354,8 +359,26 @@ footer {
 
     .pr-categories {
         background-color: $primary-bg-color;
+
+        h2 {
+            color: $font-color-dark;
+        }
+    }
+
+    .pr-category {
+        border: 2px solid $font-color-dark;
+
+        a {
+            color: $font-color-dark;
+        }
+
+        &:hover {
+            box-shadow: 0 0 40px $font-color-dark;
+            border: 2px solid $font-color-dark;
+        }
     }
 }
+
 .pr-search-results {
     display: flex;
 

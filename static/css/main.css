@@ -7449,23 +7449,26 @@ body {
 /*********************/
 .pr-categories {
   padding: 120px 0px;
-  background-color: #FBF79F; }
+  background-color: #e08390; }
   .pr-categories h2 {
-    color: #363641; }
+    color: #F8EFEA; }
 
 /**********************/
 /* 7. Category
 /*********************/
 .pr-category {
-  border: 2px solid #FFF;
+  border: 2px solid #e2adb4;
   padding: 20px;
   margin-top: 40px;
   transition: box-shadow 0.3s ease-in-out;
   width: 150px; }
   .pr-category:hover {
-    box-shadow: 0 0 40px #FFF; }
+    box-shadow: 0 0 40px #FFF;
+    border: 2px solid #F8EFEA; }
+  .pr-category h2 {
+    color: #F8EFEA; }
   .pr-category a {
-    color: #363641;
+    color: #F8EFEA;
     font-size: 22px; }
   .pr-category img {
     width: 64px; }
@@ -7482,7 +7485,6 @@ body {
 /* 9. Recipe
 /*********************/
 .pr-recipe {
-  border: 1px solid #89C72B;
   transition: box-shadow 0.3s ease-in-out; }
   .pr-recipe:hover {
     box-shadow: 0 0 10px #192F01; }
@@ -7585,6 +7587,15 @@ footer {
     padding-bottom: 0px; }
   .pr-search .pr-categories {
     background-color: #F8EFEA; }
+    .pr-search .pr-categories h2 {
+      color: #363641; }
+  .pr-search .pr-category {
+    border: 2px solid #363641; }
+    .pr-search .pr-category a {
+      color: #363641; }
+    .pr-search .pr-category:hover {
+      box-shadow: 0 0 40px #363641;
+      border: 2px solid #363641; }
 
 .pr-search-results {
   display: flex; }
