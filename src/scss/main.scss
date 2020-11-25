@@ -80,6 +80,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 0;
     z-index: 2;
     min-height: 400px;
 
@@ -247,5 +248,23 @@ body {
     h1 {
       font-size: 144px;
       font-weight: 900;
+    }
+}
+
+/**********************/
+/* 11. Footer
+/*********************/
+footer {
+    padding: 120px 0px;
+    background-color: $tertiary-bg-color;
+    color: #FFF;
+
+    ul {
+        list-style: none;
+        padding: 0px;
+    }
+
+    p {
+        font-size: 0.9rem;
     }
 }

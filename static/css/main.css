@@ -7386,6 +7386,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 0;
   z-index: 2;
   min-height: 400px; }
   .pr-jumbotron h1 {
@@ -7505,3 +7506,16 @@ body {
   .pr-404 h1 {
     font-size: 144px;
     font-weight: 900; }
+
+/**********************/
+/* 11. Footer
+/*********************/
+footer {
+  padding: 120px 0px;
+  background-color: #E0475B;
+  color: #FFF; }
+  footer ul {
+    list-style: none;
+    padding: 0px; }
+  footer p {
+    font-size: 0.9rem; }

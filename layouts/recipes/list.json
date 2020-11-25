@@ -1,0 +1,12 @@
+{{ define "response" }}
+[
+    {{ range $index, $e := .Data.Pages }}
+    {{ if $index }}, {{ end }}
+    {
+        "title": "{{ .Title }}",
+        "image": "{{ .Params.image }}",
+        "url" : "{{ .Permalink }}"
+    }
+    {{ end }}
+]
+{{ end }}
