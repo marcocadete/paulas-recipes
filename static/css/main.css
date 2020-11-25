@@ -29,7 +29,9 @@
 *
 *   11. Footer
 *
-*   12. 404 Page   
+*   12. 404 Page
+*
+*   13. Search 
 */
 /**********************/
 /* 1.  Bootstrap 4.5.3
@@ -7524,7 +7526,13 @@ body {
     color: #e08390; }
 
 /**********************/
-/* 11. Footer
+/* 10. Recipe List
+/*********************/
+.pr-recipe-list {
+  padding-bottom: 120px; }
+
+/**********************/
+/* 12. Footer
 /*********************/
 footer {
   padding: 120px 0px;
@@ -7537,7 +7545,7 @@ footer {
     font-size: 0.9rem; }
 
 /**********************/
-/* 12. 404 Page
+/* 13. 404 Page
 /*********************/
 .pr-404 {
   /* Set rules to fill background */
@@ -7557,7 +7565,7 @@ footer {
     font-weight: 900; }
 
 /**********************/
-/* 13. Search
+/* 14. Search
 /*********************/
 .pr-search-results {
   display: flex; }

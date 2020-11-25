@@ -8,4 +8,4 @@ disableKinds = ["RSS", "taxonomyTerm"]
     category = "categories"
 
 [outputs]
-    section = ["JSON", "HTML"]
+    section = ["HTML", "JSON"]

@@ -280,7 +280,14 @@ body {
 }
 
 /**********************/
-/* 11. Footer
+/* 10. Recipe List
+/*********************/
+.pr-recipe-list {
+    padding-bottom: 120px;
+}
+
+/**********************/
+/* 12. Footer
 /*********************/
 footer {
     padding: 120px 0px;
@@ -298,7 +305,7 @@ footer {
 }
 
 /**********************/
-/* 12. 404 Page
+/* 13. 404 Page
 /*********************/
 .pr-404 {
     /* Set rules to fill background */
@@ -324,7 +331,7 @@ footer {
 }
 
 /**********************/
-/* 13. Search
+/* 14. Search
 /*********************/
 .pr-search-results {
     display: flex;

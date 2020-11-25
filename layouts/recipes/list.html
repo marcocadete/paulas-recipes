@@ -1,9 +1,24 @@
 {{ define "main" }}
-  <h1>Recipes</h1>
-  {{ range .Pages }}
-    <article>
-      <h2>{{ .Title }}</h2>
-      {{ .Content }}
-    </article>
-  {{ end }}
+
+<section class="pr-recipe-list">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                {{ partial "breadcrumb" . }}
+            </div>
+        </div>
+        <div class="row">
+            {{ range (.Paginator 5).Pages.ByPublishDate.Reverse }}
+                {{ partial "recipe" . }}
+            {{ end }}
+        </div>
+        <!-- Pagination -->
+        <div class="row">
+            <div class="col-12">
+                {{ partial "pagination" . }}
+            </div>
+        </div>
+    </div>
+</section>
+
 {{ end }}
