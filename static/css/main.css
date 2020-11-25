@@ -7502,6 +7502,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  background-color: #F8EFEA;
   z-index: 1000; }
   .pr-404 h1 {
     font-size: 144px;
