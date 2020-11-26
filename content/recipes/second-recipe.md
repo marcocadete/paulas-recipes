@@ -8,7 +8,7 @@ description: >-
     ordeal, but once you get used to the process, it becomes a soothing ritual
     that's worth the effort every time.
 image: /img/second-recipe.jpeg
-categories: ["barbecue"]
+categories: ["grilled"]
 serving: 5
 ingredients: ["butter", "chicken stock", "milk", "honey", "red wine"]
 directions: [

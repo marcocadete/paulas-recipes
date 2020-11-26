@@ -4,7 +4,7 @@
     {{ partial "header" . }}
     <div class="container">
         <div class="row">
-            {{ range (.Paginator 5).Pages.ByPublishDate.Reverse }}
+            {{ range (.Paginator 6).Pages.ByPublishDate.Reverse }}
                 {{ partial "recipe" . }}
             {{ end }}
         </div>

@@ -18,6 +18,11 @@
 
                 </div>
                 <section class="mb-5">
+                    <h5 class="pr-single-recipe__subtitle mb-3">Description</h5>
+                    <p class="lead">{{ .Params.description }}</p>
+                </section>
+                <br>
+                <section class="mb-5">
                     <h5 class="pr-single-recipe__subtitle mb-3">Incredients</h5>
                     <ul>
                         {{ range .Params.Ingredients }}
@@ -45,10 +50,12 @@
                     </ul>
                 </section>
                 <br>
+                {{ if .Content }}
                 <section class="mb-5">
                     <h5 class="pr-single-recipe__subtitle mb-3">Extras</h5>
                     {{ .Content }}
                 </section>
+                {{ end }}
             </article>
         </div>
     </div>
