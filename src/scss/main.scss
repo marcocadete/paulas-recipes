@@ -178,7 +178,12 @@ body {
     padding: 20px;
     margin-top: 40px;
     transition: box-shadow 0.3s ease-in-out;
-    width: 150px;
+    width: 130px;
+
+    // Small devices (landscape phones, 360px and up)
+    @media (min-width: 360px) {
+        width: 150px;
+    }
 
     &:hover {
         box-shadow: 0 0 40px $font-color-dark;

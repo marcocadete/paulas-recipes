@@ -7461,7 +7461,10 @@ body {
   padding: 20px;
   margin-top: 40px;
   transition: box-shadow 0.3s ease-in-out;
-  width: 150px; }
+  width: 130px; }
+  @media (min-width: 360px) {
+    .pr-category {
+      width: 150px; } }
   .pr-category:hover {
     box-shadow: 0 0 40px #363641;
     border: 2px solid #363641; }
