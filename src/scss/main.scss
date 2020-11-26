@@ -61,11 +61,9 @@ $theme-colors: (
 // Background Colors
 $primary-bg-color: #F8EFEA;
 $secondary-bg-color: #DED369;
-//$tertiary-bg-color: #E0475B;
 $tertiary-bg-color: #EF5454;
 
 // Colors
-//$primary-color: #E0475B;
 $primary-color: #EF5454;
 $primary-color-light: #e08390;
 $primary-color-lightest: #FFC0CB;
@@ -524,7 +522,7 @@ footer {
         position: relative;
         z-index: 4;
         color: #fff;
-        background-color: $primary-color-light;
+        background-color: $primary-color;
     }
 }
 
