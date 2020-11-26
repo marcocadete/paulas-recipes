@@ -60,14 +60,12 @@ $theme-colors: (
 /*********************/
 // Background Colors
 $primary-bg-color: #F8EFEA;
-$secondary-bg-color: #DED369;
 $tertiary-bg-color: #EF5454;
 
 // Colors
 $primary-color: #EF5454;
 $primary-color-light: #e08390;
 $primary-color-lightest: #FFC0CB;
-$secondary-color: #DED369;
 $tertiary-color: #192F01;
 $tertiary-color-light: #89C72B;
 
@@ -245,7 +243,7 @@ body {
   }
 
   &__image {
-      background-color: $secondary-bg-color;
+      background-color: $primary-color;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
