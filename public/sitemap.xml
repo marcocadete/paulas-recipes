@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://paulas-recipes.com/recipes/third-recipe/</loc>
+    <lastmod>2017-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://paulas-recipes.com/recipes/second-recipe/</loc>
+    <lastmod>2017-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://paulas-recipes.com/recipes/first-recipe/</loc>
+    <lastmod>2017-01-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://paulas-recipes.com/about/</loc>
+  </url>
+  
+  <url>
+    <loc>http://paulas-recipes.com/categories/barbecue/</loc>
+    <lastmod>2017-01-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://paulas-recipes.com/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>http://paulas-recipes.com/recipes/</loc>
+    <lastmod>2017-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://paulas-recipes.com/search/</loc>
+  </url>
+  
+  <url>
+    <loc>http://paulas-recipes.com/</loc>
+    <lastmod>2017-01-06T00:00:00+00:00</lastmod>
+  </url>
+  
+</urlset>

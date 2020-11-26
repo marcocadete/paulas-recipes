@@ -7709,9 +7709,3 @@ footer {
     z-index: 4;
     color: #fff;
     background-color: #e08390; }
-
-/**********************/
-/* 18. Taxonomy
-/*********************/
-.pr-category-taxonomy {
-  min-height: 100vh; }
