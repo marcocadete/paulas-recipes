@@ -46,7 +46,7 @@
 /* 1.  Bootstrap 4.5.3
 /*********************/
 $theme-colors: (
-  "primary": #E0475B,
+  "primary": #EF5454,
   "secondary": #DED369,
   "tertiary": #89C72B,
   "dark": #363641,
@@ -61,10 +61,12 @@ $theme-colors: (
 // Background Colors
 $primary-bg-color: #F8EFEA;
 $secondary-bg-color: #DED369;
-$tertiary-bg-color: #E0475B;
+//$tertiary-bg-color: #E0475B;
+$tertiary-bg-color: #EF5454;
 
 // Colors
-$primary-color: #E0475B;
+//$primary-color: #E0475B;
+$primary-color: #EF5454;
 $primary-color-light: #e08390;
 $primary-color-lightest: #FFC0CB;
 $secondary-color: #DED369;
@@ -349,11 +351,11 @@ footer {
 /* 14. Search
 /*********************/
 .pr-search {
-    background-color: $primary-color-light;
+    background-color: $primary-color;
 
     .pr-header {
         color: #FFF;
-        background-color: $primary-color-light;
+        background-color: $primary-color;
         margin: 0px;
         padding-bottom: 0px;
     }
@@ -474,7 +476,7 @@ footer {
     .pr-header {
         margin: 0px;
         color: #fff;
-        background-color: $primary-color-light;
+        background-color: $primary-color;
         position: relative;
         z-index: 4;
     }

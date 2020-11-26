@@ -6,7 +6,7 @@
             {{ range .Param $cat }}
                 {{ $name := . }}
                 {{ with $.Site.GetPage (printf "/%s/%s" $cat ($name | urlize)) }}
-                    <a href="/categories/{{ $name }}" class="badge badge-primary pr-recipe__category">{{ $name }}</a>
+                    <a href="/categories/{{ $name }}" class="badge badge-primary pr-recipe__category">{{ title $name }}</a>
                 {{ end }}
             {{ end }}
             <h5 class="card-title">{{ .Title }}</h5>

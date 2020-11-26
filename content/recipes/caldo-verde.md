@@ -7,7 +7,7 @@ description: >-
     ordeal, but once you get used to the process, it becomes a soothing ritual
     that's worth the effort every time.
 image: /img/recipes/soup/caldo-verde.jpg
-categories: ["fried"]
+categories: ["soup"]
 serving: 12
 ingredients: ["butter", "Fresh pinapple", "milk", "honey", "flour"]
 directions: [
