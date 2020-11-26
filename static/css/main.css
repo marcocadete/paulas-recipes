@@ -7704,8 +7704,9 @@ footer {
     left: 0;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 2; }
-  .pr-contact__image {
-    max-width: 400px; }
+  .pr-contact__image img {
+    width: 200px;
+    height: 200px; }
   .pr-contact .pr-header {
     margin: 0px;
     position: relative;

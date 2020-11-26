@@ -514,7 +514,11 @@ footer {
     }
 
     &__image {
-        max-width: 400px;
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
     }
 
     .pr-header {
