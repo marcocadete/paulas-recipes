@@ -131,13 +131,13 @@ body {
 /* 5. Quote
 /*********************/
 .pr-quote {
-    padding: 40px 0;
+    padding: 80px 0px 10px 0px;
     background-color: $primary-color;
     color: #fff;
 
     // Small devices (landscape phones, 576px and up)
     @media (min-width: 576px) {
-        padding: 120px 0;
+        padding: 120px 0px 40px 0px;
     }
 
     &__container {
@@ -162,6 +162,7 @@ body {
         // Small devices (landscape phones, 576px and up)
         @media (min-width: 576px) {
             font-size: 1.8rem;
+            margin-left: 40px;
         }
     }
 }

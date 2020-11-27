@@ -7427,12 +7427,12 @@ body {
 /* 5. Quote
 /*********************/
 .pr-quote {
-  padding: 40px 0;
+  padding: 80px 0px 10px 0px;
   background-color: #EF5454;
   color: #fff; }
   @media (min-width: 576px) {
     .pr-quote {
-      padding: 120px 0; } }
+      padding: 120px 0px 40px 0px; } }
   .pr-quote__container {
     position: relative;
     z-index: 1; }
@@ -7450,7 +7450,8 @@ body {
     font-size: 1.6rem; }
     @media (min-width: 576px) {
       .pr-quote blockquote {
-        font-size: 1.8rem; } }
+        font-size: 1.8rem;
+        margin-left: 40px; } }
 
 /**********************/
 /* 6. Categories
