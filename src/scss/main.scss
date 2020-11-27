@@ -174,10 +174,17 @@ body {
 /* 6. Categories
 /*********************/
 .pr-categories {
-    padding: 80px 0px;
+    padding-top: 10px;
+    padding-bottom: 60px;
 
     h2 {
         color: $font-color-dark;
+    }
+
+    // Small devices (landscape phones, 360px and up)
+    @media (min-width: 576px) {
+        padding-top: 60px;
+        padding-bottom: 80px;
     }
 }
 
@@ -214,10 +221,16 @@ body {
 /* 8. Recent recipes
 /*********************/
 .pr-recent-recipes {
-    padding: 120px 0px;
+    padding-top: 40px;
+    padding-bottom: 60px;
 
     h2 {
         color: $font-color-dark;
+    }
+
+    @media (min-width: 576px) {
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }
 
@@ -313,7 +326,7 @@ body {
 /* 12. Footer
 /*********************/
 footer {
-    padding: 120px 0px;
+    padding: 40px 0px;
     background-color: $font-color-dark;
     color: #FFF;
 
@@ -332,6 +345,10 @@ footer {
         &:hover {
             box-shadow: 0 0 40px #E68CBE;
         }
+    }
+
+    @media (min-width: 576px) {
+        padding: 80px 0px;
     }
 }
 
