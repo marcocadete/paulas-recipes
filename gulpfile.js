@@ -1,5 +1,5 @@
 const { parallel, src, dest, watch } = require('gulp');
-const autoprefixer = require('gulp-autoprefixer');
+const cleanCSS = require('gulp-clean-css');
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
 const sass = require('gulp-sass');
@@ -20,9 +20,7 @@ function javascript(cb) {
 function scss(cb) {
     return src('src/scss/**/*.scss')
         .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer({
-            cascade: false
-    }))
+        .pipe(cleanCSS({compatibility: 'ie8'}))
         .pipe(dest('static/css'))
     cb();
 }
