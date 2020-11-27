@@ -1,0 +1,13 @@
+<div class="d-flex flex-wrap justify-content-between">
+    <div class="m-2">
+        {{ if .NextPage }}
+        <a href="{{ .NextPage.Permalink }}">« {{ .NextPage.Title | truncate 50 "..." }}</a>
+        {{ end }}
+    </div>
+    
+    <div class="m-2">
+        {{ if .PrevPage }}
+        <a href="{{ .PrevPage.Permalink }}">{{ .PrevPage.Title | truncate 50 "..."}} »</a>
+        {{ end }}
+    </div>
+</div>
