@@ -9,30 +9,30 @@ sass.compiler = require('node-sass');
 
 function javascript(cb) {
     return src('src/js/**/*.js')
-    .pipe(babel({
-        presets: ['@babel/env']
-    }))
-    .pipe(uglify())
-    .pipe(dest('static/js'))
-  cb();
+        .pipe(babel({
+            presets: ['@babel/env']
+        }))
+        .pipe(uglify())
+        .pipe(dest('static/js'))
+    cb();
 }
 
 function scss(cb) {
-  return src('src/scss/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer({
-        cascade: false
+    return src('src/scss/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(autoprefixer({
+            cascade: false
     }))
-    .pipe(dest('static/css'))
-  cb();
+        .pipe(dest('static/css'))
+    cb();
 }
 
 function watchJS(cb) {
-  return watch('src/js/**/*.js', javascript)
+    return watch('src/js/**/*.js', javascript)
 }
 
 function watchSCSS(cb) {
-  return watch('src/scss/**/**.scss', scss)
+    return watch('src/scss/**/**.scss', scss)
 }
 
 exports.default = parallel(javascript, scss);

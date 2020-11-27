@@ -40,6 +40,8 @@
 *   16. About
 *
 *   17. Contact
+*
+*   18. Taxonomy
 */
 /**********************/
 /* 1.  Bootstrap 4.5.3
@@ -7498,8 +7500,8 @@ body {
     box-shadow: 0 0 10px #192F01; }
   .pr-recipe__info {
     position: relative; }
-    .pr-recipe__info h5 {
-      color: #363641; }
+  .pr-recipe h5 {
+    color: #363641; }
   .pr-recipe__category {
     position: absolute;
     top: -11px;
